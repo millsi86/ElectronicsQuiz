@@ -20,7 +20,8 @@
     <string name="Vin">Vin = 5V</string>
     <string name="R1">R1 = 1kOhm</string>
     <string name="R2">R2 = 4kOhm</string>
-    <string name="q3Hint">Enter Vout in Volts</string>
+    <string name="q3Hint">Enter Vout</string>
+    <string name="q3Unit">V</string>
     <string name="question4">Q4: Is the following Curuit and HIGH or LOW pass filter?</string>
     <string name="q4ImageDescription">Filter Circuit Image</string>
     <string name="q4Prompt">Choose Type of Filter</string>

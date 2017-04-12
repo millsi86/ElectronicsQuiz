@@ -126,14 +126,28 @@
     </style>
 
     <style name="question3Answer">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingTop">@dimen/questionPadding</item>
         <item name="android:paddingBottom">@dimen/questionPadding</item>
         <item name="android:layout_marginLeft">@dimen/questionPadding</item>
-        <item name="android:layout_marginRight">24dp</item>
         <item name="android:inputType">numberDecimal</item>
+        <item name="android:layout_weight">4</item>
         <item name="android:hint">@string/q3Hint</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="question3Unit">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/questionPadding</item>
+        <item name="android:paddingBottom">@dimen/questionPadding</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/UnitSize</item>
     </style>
 
     <style name="FilterCircuitImage">

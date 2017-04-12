@@ -8,5 +8,6 @@
     <dimen name="LineHeight">1dp</dimen>
     <dimen name="Dummy">0dp</dimen>
     <dimen name="SpinnerMargin">48dp</dimen>
+    <dimen name="UnitSize">18sp</dimen>
 
 </resources>

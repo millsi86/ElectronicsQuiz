@@ -274,11 +274,18 @@
                         style="@style/question3Labels"
                         android:text="@string/R2" />
 
-                    <EditText
+                    <LinearLayout style="@style/LinearHorizontal">
+
+                        <EditText
                         android:id="@+id/q3Ans"
                         style="@style/question3Answer"
                         android:imeOptions="actionDone" />
 
+                        <TextView
+                            style="@style/question3Unit"
+                            android:text="@string/q3Unit" />
+
+                    </LinearLayout>
 
                 </LinearLayout> <!-- Question 3 Text and Entry Field-->
 
