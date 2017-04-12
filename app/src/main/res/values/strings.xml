@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Electronics Quiz</string>
+    <string name="dummy">dummy</string>
+    <string name="question1">Q1: Match the Images of Components to their names:</string>
+    <string name="q1ResImageDescription">Question 1 - Image 1</string>
+    <string name="q1CapImageDescription">Question 1 - Image 2</string>
+    <string name="q1IndImageDescription">Question 1 - Image 3</string>
+    <string name="q1PotImageDescription">Question 1 - Image 4</string>
+    <string name="inductor">Inductor</string>
+    <string name="capacitor">Capacitor</string>
+    <string name="resistor">Resistor</string>
+    <string name="potentiometer">Potentiometer</string>
+    <string name="question2">Q2: Match the Component Symbol to the name</string>
+    <string name="q2PotImageDescription">Question 2 - Symbol 1</string>
+    <string name="q2CapImageDescription">Question 2 - Symbol 2</string>
+    <string name="q2IndImageDescription">Question 2 - Symbol 3</string>
+    <string name="q2ResImageDescription">Question 2 - Symbol 4</string>
+    <string name="question3">Q3: Calculate the Voltage for the Potential Divider Circuit</string>
+    <string name="q3ImageDescription">Potential Divider Circuit Image</string>
+    <string name="Vin">Vin = 5V</string>
+    <string name="R1">R1 = 1kOhm</string>
+    <string name="R2">R2 = 4kOhm</string>
+    <string name="q3Hint">Enter Vout in Volts</string>
+    <string name="question4">Q4: Is the following Curuit and HIGH or LOW pass filter?</string>
+    <string name="q4ImageDescription">Filter Circuit Image</string>
+    <string name="q4Prompt">Choose Type of Filter</string>
+    <string-array name="filter_options">
+        <item>Select Filter Type</item>
+        <item>Low Pass</item>
+        <item>High Pass</item>
+    </string-array>
+    <string name="q4answer">High Pass</string>
+    <string name="submit">Submit</string>
+    <string name="Q1IndError">Please enter a picture number for Question 1 Inductor</string>
+    <string name="Q1CapError">Please enter a picture number for Question 1 Capacitor</string>
+    <string name="Q1ResError">Please enter a picture number for Question 1 Resistor</string>
+    <string name="Q1PotError">Please enter a picture number for Question 1 Potentiometer</string>
+    <string name="Q3Error">Please enter a Voltage for Question 3</string>
+    <string name="Ans10of10">Congratulations, you Aced it with 10 out of 10!!!</string>
+    <string name="AnsHighof10Start">Very Well done, you got\u0020</string>
+    <string name="AnsMidof10Start">Well done, you got\u0020</string>
+    <string name="AnsLowof10Start">Nice Try, you got\u0020</string>
+    <string name="Ansof10End">\u0020out of 10</string>
+    <string name="Ans0of10">Unlucky, you got 0 out of 10. You need to try harder!!!</string>
+
+</resources>

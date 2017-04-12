@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.electronicsquiz.MainActivity">
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:background="@drawable/backgroundrotated">
+
+        <LinearLayout style="@style/LinearVertical">
+
+            <TextView
+                android:id="@+id/editText0"
+                style="@style/DummyTextView">
+
+                <requestFocus />
+            </TextView> <!-- dummy view to stop EditText getting focus on launch -->
+
+            <TextView
+                style="@style/Heading"
+                android:text="@string/question1" /> <!-- Question 1 Title-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q1ResImageDescription"
+                    android:src="@drawable/res_image" />
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q1CapImageDescription"
+                    android:src="@drawable/cap_image" />
+
+            </LinearLayout> <!-- Row 1 of Component Images-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q1IndImageDescription"
+                    android:src="@drawable/ind_image" />
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q1PotImageDescription"
+                    android:src="@drawable/pot_image" />
+
+            </LinearLayout><!-- Row 2 of Component Images-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <TextView
+                    style="@style/question1Labels"
+                    android:text="@string/inductor" />
+
+                <EditText
+                    android:id="@+id/q1IndAns"
+                    style="@style/question1Answers"
+                    android:imeOptions="actionNext" />
+
+                <TextView
+                    style="@style/question1Labels"
+                    android:text="@string/capacitor" />
+
+                <EditText
+                    android:id="@+id/q1CapAns"
+                    style="@style/question1Answers"
+                    android:imeOptions="actionNext" />
+
+            </LinearLayout> <!-- Row 1 of Component Names-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <TextView
+                    style="@style/question1Labels"
+                    android:text="@string/resistor" />
+
+                <EditText
+                    android:id="@+id/q1ResAns"
+                    style="@style/question1Answers"
+                    android:imeOptions="actionNext" />
+
+                <TextView
+                    style="@style/question1Labels"
+                    android:text="@string/potentiometer" />
+
+                <EditText
+                    android:id="@+id/q1PotAns"
+                    style="@style/question1Answers"
+                    android:imeOptions="actionDone" />
+
+            </LinearLayout> <!-- Row 2 of Component Names-->
+
+            <View style="@style/HorizontalLine" /> <!-- Line -->
+
+            <TextView
+                style="@style/Heading"
+                android:text="@string/question2" /> <!-- Question 2 Title-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <View style="@style/DummyComponent" />
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q2PotImageDescription"
+                    android:rotation="90"
+                    android:src="@drawable/pot_symbol" />
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q2CapImageDescription"
+                    android:rotation="90"
+                    android:src="@drawable/cap_symbol" />
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q2IndImageDescription"
+                    android:rotation="90"
+                    android:src="@drawable/ind_symbol" />
+
+                <ImageView
+                    style="@style/ComponentImage"
+                    android:contentDescription="@string/q2ResImageDescription"
+                    android:rotation="90"
+                    android:src="@drawable/res_symbol" />
+
+                <View style="@style/DummyComponent2" />
+            </LinearLayout> <!-- Question 2 Component Symbols-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <TextView
+                    style="@style/question2Labels"
+                    android:text="@string/inductor" />
+
+                <RadioGroup
+                    android:id="@+id/q2RadGrp1"
+                    style="@style/question2Radio">
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnInd1"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnInd2"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnInd3"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnInd4"
+                        style="@style/question2RadioButton" />
+
+                </RadioGroup>
+            </LinearLayout> <!-- Question 2 Inductor RadioGroup-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <TextView
+                    style="@style/question2Labels"
+                    android:text="@string/capacitor" />
+
+                <RadioGroup
+                    android:id="@+id/q2RadGrp2"
+                    style="@style/question2Radio">
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnCap1"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnCap2"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnCap3"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnCap4"
+                        style="@style/question2RadioButton" />
+
+                </RadioGroup>
+            </LinearLayout> <!-- Question 2 Capacitor RadioGroup-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <TextView
+                    style="@style/question2Labels"
+                    android:text="@string/resistor" />
+
+                <RadioGroup
+                    android:id="@+id/q2RadGrp3"
+                    style="@style/question2Radio">
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnRes1"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnRes2"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnRes3"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnRes4"
+                        style="@style/question2RadioButton" />
+
+                </RadioGroup>
+            </LinearLayout> <!-- Question 2 Resistor RadioGroup-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <TextView
+                    style="@style/question2Labels"
+                    android:text="@string/potentiometer" />
+
+                <RadioGroup
+                    android:id="@+id/q2RadGrp4"
+                    style="@style/question2Radio">
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnPot1"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnPot2"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnPot3"
+                        style="@style/question2RadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/q2RadBtnPot4"
+                        style="@style/question2RadioButton" />
+
+                </RadioGroup>
+            </LinearLayout> <!-- Question 2 Potentiometer RadioGroup-->
+
+            <View style="@style/HorizontalLine" /> <!-- Line -->
+
+            <TextView
+                style="@style/Heading"
+                android:text="@string/question3" /> <!-- Question 3 Title-->
+
+            <LinearLayout style="@style/LinearHorizontal">
+
+                <ImageView
+                    style="@style/PotDivCircuitImage"
+                    android:contentDescription="@string/q3ImageDescription"
+                    android:src="@drawable/pot_div_image" /> <!-- Question 3 Circuit Image-->
+
+                <LinearLayout style="@style/LinearVerticalSub">
+
+                    <TextView
+                        style="@style/question3Labels"
+                        android:text="@string/Vin" />
+
+                    <TextView
+                        style="@style/question3Labels"
+                        android:text="@string/R1" />
+
+                    <TextView
+                        style="@style/question3Labels"
+                        android:text="@string/R2" />
+
+                    <EditText
+                        android:id="@+id/q3Ans"
+                        style="@style/question3Answer"
+                        android:imeOptions="actionDone" />
+
+
+                </LinearLayout> <!-- Question 3 Text and Entry Field-->
+
+            </LinearLayout> <!-- Question 3-->
+
+            <View style="@style/HorizontalLine" /> <!-- Line -->
+
+            <TextView
+                style="@style/Heading"
+                android:text="@string/question4" /> <!-- Question 4 Title-->
+
+            <ImageView
+                style="@style/FilterCircuitImage"
+                android:contentDescription="@string/q4ImageDescription"
+                android:src="@drawable/filter_circuit" /> <!-- Question 4 Circuit Image-->
+
+            <Spinner
+                android:id="@+id/q4Spinner"
+                style="@style/spinner"
+                android:entries="@array/filter_options"
+                android:prompt="@string/q4Prompt" /><!-- Question 4 Answer Spinner-->
+
+            <View style="@style/HorizontalLine" /> <!-- Line -->
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/SubmitButton"
+                android:onClick="submit"
+                android:text="@string/submit" /> <!-- Submit Button -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
