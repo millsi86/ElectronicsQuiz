@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -15,6 +16,10 @@ import static com.example.android.electronicsquiz.R.id.q1IndAns;
 import static com.example.android.electronicsquiz.R.id.q1PotAns;
 import static com.example.android.electronicsquiz.R.id.q1ResAns;
 import static com.example.android.electronicsquiz.R.id.q3Ans;
+import static com.example.android.electronicsquiz.R.id.q5eq1Ans;
+import static com.example.android.electronicsquiz.R.id.q5eq2Ans;
+import static com.example.android.electronicsquiz.R.id.q5eq3Ans;
+import static com.example.android.electronicsquiz.R.id.q5eq4Ans;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         totalScore = 0;
 
         // Question 1 Score Calculation:
-
         EditText Q1Ans1Id = (EditText) findViewById(q1IndAns);
         boolean sQ1Ans1 = TextUtils.isEmpty(Q1Ans1Id.getText());
         if (sQ1Ans1) {
@@ -85,9 +89,7 @@ public class MainActivity extends AppCompatActivity {
             totalScore += 1;
         }
 
-
         // Question 2 Score Calculation:
-
         RadioGroup IndRadioGroup = (RadioGroup) findViewById(R.id.q2RadGrp1);
         RadioButton IndAnswerId = (RadioButton) findViewById(R.id.q2RadBtnInd3);
 
@@ -99,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
         RadioGroup PotRadioGroup = (RadioGroup) findViewById(R.id.q2RadGrp4);
         RadioButton PotAnswerId = (RadioButton) findViewById(R.id.q2RadBtnPot1);
-
 
         int indSelectedId = IndRadioGroup.getCheckedRadioButtonId();
         if (indSelectedId == IndAnswerId.getId()) {
@@ -121,9 +122,7 @@ public class MainActivity extends AppCompatActivity {
             totalScore += 1;
         }
 
-
         // Question 3 Score Calculation:
-
         EditText Q3AnsId = (EditText) findViewById(q3Ans);
         boolean sQ3Ans = TextUtils.isEmpty(Q3AnsId.getText());
         if (sQ3Ans) {
@@ -135,22 +134,43 @@ public class MainActivity extends AppCompatActivity {
             totalScore += 1;
         }
 
-
         // Question 4 Score Calculation:
-
         Spinner spinner = (Spinner) findViewById(R.id.q4Spinner);
         String q4Ans = spinner.getSelectedItem().toString();
         if (q4Ans.equals(getString(R.string.q4answer))) {
             totalScore += 1;
         }
 
+        // Question 4 Score Calculation:
+        final CheckBox q5ans1 = (CheckBox) findViewById(q5eq1Ans);
+        final CheckBox q5ans2 = (CheckBox) findViewById(q5eq2Ans);
+        final CheckBox q5ans3 = (CheckBox) findViewById(q5eq3Ans);
+        final CheckBox q5ans4 = (CheckBox) findViewById(q5eq4Ans);
+
+        if (q5ans1.isChecked()) {
+            totalScore += 1;
+        }
+        if (q5ans2.isChecked()) {
+            totalScore += 0;
+        } else {
+            totalScore += 1;
+        }
+        if (q5ans3.isChecked()) {
+            totalScore += 0;
+        } else {
+            totalScore += 1;
+        }
+        if (q5ans4.isChecked()) {
+            totalScore += 1;
+        }
+
         // Score Toast Messages:
         String ToastMessage;
-        if (totalScore == 10) {
+        if (totalScore == 14) {
             ToastMessage = getString(R.string.Ans10of10);
-        } else if (totalScore > 7) {
+        } else if (totalScore > 10) {
             ToastMessage = getString(R.string.AnsHighof10Start) + totalScore.toString() + getString(R.string.Ansof10End);
-        } else if (totalScore > 3) {
+        } else if (totalScore > 5) {
             ToastMessage = getString(R.string.AnsMidof10Start) + totalScore.toString() + getString(R.string.Ansof10End);
         } else if (totalScore > 0) {
             ToastMessage = getString(R.string.AnsLowof10Start) + totalScore.toString() + getString(R.string.Ansof10End);

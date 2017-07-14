@@ -310,6 +310,44 @@
 
             <View style="@style/HorizontalLine" /> <!-- Line -->
 
+            <TextView
+                style="@style/Heading"
+                android:text="@string/question5" /> <!-- Question 5 Title-->
+
+            <LinearLayout
+                style="@style/LinearHorizontal"
+                android:paddingLeft="@dimen/questionPadding">
+
+                <CheckBox
+                    android:id="@+id/q5eq1Ans"
+                    style="@style/question1Labels"
+                    android:text="@string/q5eq1" />
+
+                <CheckBox
+                    android:id="@+id/q5eq2Ans"
+                    style="@style/question1Labels"
+                    android:text="@string/q5eq2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearHorizontal"
+                android:paddingLeft="@dimen/questionPadding">
+
+                <CheckBox
+                    android:id="@+id/q5eq3Ans"
+                    style="@style/question1Labels"
+                    android:text="@string/q5eq3" />
+
+                <CheckBox
+                    android:id="@+id/q5eq4Ans"
+                    style="@style/question1Labels"
+                    android:text="@string/q5eq4" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" /> <!-- Line -->
+
             <Button
                 android:id="@+id/submit"
                 style="@style/SubmitButton"
