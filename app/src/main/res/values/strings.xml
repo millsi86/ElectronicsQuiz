@@ -31,7 +31,8 @@
         <item>High Pass</item>
     </string-array>
     <string name="q4answer">High Pass</string>
-    <string name="question5">Which of the following equations are correct?</string>
+    <string name="q4wrongans">Low Pass</string>
+    <string name="question5">Q5: Which of the following equations are correct?</string>
     <string name="q5eq1">V = IR</string>
     <string name="q5eq2">P = VR</string>
     <string name="q5eq3">C = QV</string>
@@ -42,6 +43,8 @@
     <string name="Q1ResError">Please enter a picture number for Question 1 Resistor</string>
     <string name="Q1PotError">Please enter a picture number for Question 1 Potentiometer</string>
     <string name="Q3Error">Please enter a Voltage for Question 3</string>
+    <string name="Q4Error">Please select a filter type for Question 4</string>
+    <string name="Q5Error">Please answer Question 5</string>
     <string name="Ans10of10">Congratulations, you Aced it with 14 out of 14!!!</string>
     <string name="AnsHighof10Start">Very Well done, you got\u0020</string>
     <string name="AnsMidof10Start">Well done, you got\u0020</string>

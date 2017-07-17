@@ -139,6 +139,9 @@ public class MainActivity extends AppCompatActivity {
         String q4Ans = spinner.getSelectedItem().toString();
         if (q4Ans.equals(getString(R.string.q4answer))) {
             totalScore += 1;
+        } else if (!q4Ans.equals(R.string.q4wrongans)) {
+            Toast.makeText(getApplicationContext(), R.string.Q4Error, Toast.LENGTH_LONG).show();
+            return;
         }
 
         // Question 4 Score Calculation:
@@ -147,21 +150,22 @@ public class MainActivity extends AppCompatActivity {
         final CheckBox q5ans3 = (CheckBox) findViewById(q5eq3Ans);
         final CheckBox q5ans4 = (CheckBox) findViewById(q5eq4Ans);
 
-        if (q5ans1.isChecked()) {
-            totalScore += 1;
-        }
-        if (q5ans2.isChecked()) {
-            totalScore += 0;
+        if (q5ans1.isChecked() || q5ans2.isChecked() || q5ans3.isChecked() || q5ans4.isChecked()) {
+            if (q5ans1.isChecked()) {
+                totalScore += 1;
+            }
+            if (!q5ans2.isChecked()) {
+                totalScore += 1;
+            }
+            if (!q5ans3.isChecked()) {
+                totalScore += 1;
+            }
+            if (q5ans4.isChecked()) {
+                totalScore += 1;
+            }
         } else {
-            totalScore += 1;
-        }
-        if (q5ans3.isChecked()) {
-            totalScore += 0;
-        } else {
-            totalScore += 1;
-        }
-        if (q5ans4.isChecked()) {
-            totalScore += 1;
+            Toast.makeText(getApplicationContext(), R.string.Q5Error, Toast.LENGTH_LONG).show();
+            return;
         }
 
         // Score Toast Messages:

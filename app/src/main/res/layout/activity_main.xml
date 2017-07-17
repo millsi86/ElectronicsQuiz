@@ -328,7 +328,7 @@
                     style="@style/question1Labels"
                     android:text="@string/q5eq2" />
 
-            </LinearLayout>
+            </LinearLayout> <!-- Row 1 of equations-->
 
             <LinearLayout
                 style="@style/LinearHorizontal"
@@ -344,7 +344,7 @@
                     style="@style/question1Labels"
                     android:text="@string/q5eq4" />
 
-            </LinearLayout>
+            </LinearLayout> <!-- Row 2 of equations-->
 
             <View style="@style/HorizontalLine" /> <!-- Line -->
 
